@@ -1,7 +1,7 @@
 # binaryCOCK
 Binary-coded Decimal clock with the Raspberry Pi Pico W
 
-#DOONE
+#DONE
 - [✔️] store each binary digit in it's own variable
 
 #TODO:
