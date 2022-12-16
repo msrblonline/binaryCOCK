@@ -1,9 +1,16 @@
 from time import sleep
-import datetime
+# import datetime
+
+# import machine
+from machine import RTC, Pin, PWM
+
+rtc = RTC()
+rtc.datetime((2000,1,1,1,1,1,0,0))
 
 while True:
     # Get the current time
-    t = datetime.datetime.now()
+    #     t = datetime.datetime.now()
+    t=rtc.datetime()
     # Convert the hours, minutes, and seconds to binary (BCD)
 
     print("hours------" + str(t.hour))
